@@ -1,4 +1,4 @@
-package tech.yojigen.pixiu.utils;
+package tech.yojigen.utils;
 
 import android.content.Intent;
 import android.graphics.Bitmap;

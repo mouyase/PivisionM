@@ -9,6 +9,18 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Pixiu" />
+        android:theme="@style/Theme.Pixiu">
+        <activity android:name=".view.RouterActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <provider
+            android:name="tech.yojigen.utils.init.YUtilInitProvider"
+            android:authorities="tech.yojigen.pixiu.init.YUtilInitProvider"
+            android:exported="false" />
+    </application>
 
 </manifest>

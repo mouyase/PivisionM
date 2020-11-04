@@ -10,7 +10,7 @@ import java.util.Locale;
 import okhttp3.Interceptor;
 import okhttp3.Request;
 import okhttp3.Response;
-import tech.yojigen.pixiu.utils.YMD5;
+import tech.yojigen.utils.YMD5;
 
 public class PixivInterceptor implements Interceptor {
     public final String BASE_HASH = "28c1fdd170a5204386cb1313c7077b34f83e4aaf4aa829ce78c231e05b0bae2c";

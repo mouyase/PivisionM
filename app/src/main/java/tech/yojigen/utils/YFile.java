@@ -1,4 +1,4 @@
-package tech.yojigen.pixiu.utils;
+package tech.yojigen.utils;
 
 import android.content.ContentResolver;
 import android.content.ContentValues;

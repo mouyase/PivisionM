@@ -1,4 +1,4 @@
-package tech.yojigen.pixiu.utils;
+package tech.yojigen.utils;
 
 import java.util.HashMap;
 import java.util.Map;
