@@ -1,5 +1,6 @@
 package tech.yojigen.pixiu.view;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
@@ -21,7 +22,8 @@ public class RouterActivity extends AppCompatActivity {
             @Override
             public <T> void success(T jsonObject) {
                 OAuthDTO dto = (OAuthDTO) jsonObject;
-                System.out.println(dto.toString());
+//                System.out.println(dto.toString());
+                RouterActivity.this.startActivity(new Intent(RouterActivity.this, MainActivity.class));
             }
 
             @Override
