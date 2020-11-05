@@ -24,6 +24,12 @@ public class PixivService {
         pixivForm.set("device_token", "pixiv");
         pixivForm.set("get_secure_url", "true");
         pixivForm.set("include_policy", "true");
+        if (pixivForm.containsKey("password")) {
+            pixivForm.set("grant_type", "password");
+        }
+        if(pixivForm.containsKey("refresh_token")){
+            pixivForm.set("grant_type", "refresh_token");
+        }
         PixivClient.post(api, pixivForm, new PixivClientCallback() {
             @Override
             public void success(String bodyString) {

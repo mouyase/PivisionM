@@ -17,7 +17,6 @@ public class RouterActivity extends AppCompatActivity {
         PixivForm pixivForm = new PixivForm();
         pixivForm.set("username", "mouyase");
         pixivForm.set("password", "a115324132");
-        pixivForm.set("grant_type", "password");
         PixivService.getService().auth(pixivForm, new PixivServiceCallback() {
             @Override
             public <T> void success(T jsonObject) {

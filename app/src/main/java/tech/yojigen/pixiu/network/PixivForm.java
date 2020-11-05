@@ -19,4 +19,8 @@ public class PixivForm {
         }
         return builder.build();
     }
+
+    public boolean containsKey(String key) {
+        return mBodyMap.containsKey(key);
+    }
 }

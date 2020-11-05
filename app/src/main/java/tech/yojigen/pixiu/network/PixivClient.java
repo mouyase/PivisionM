@@ -1,6 +1,7 @@
 package tech.yojigen.pixiu.network;
 
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 import okhttp3.Call;
 import okhttp3.Callback;
@@ -17,6 +18,9 @@ public class PixivClient {
 
     private PixivClient() {
         OkHttpClient.Builder builder = new OkHttpClient.Builder();
+        builder.connectTimeout(60, TimeUnit.SECONDS);
+        builder.readTimeout(600, TimeUnit.SECONDS);
+        builder.writeTimeout(600, TimeUnit.SECONDS);
         HttpLoggingInterceptor httpLoggingInterceptor = new HttpLoggingInterceptor();
         httpLoggingInterceptor.setLevel(BuildConfig.DEBUG ? HttpLoggingInterceptor.Level.BODY : HttpLoggingInterceptor.Level.NONE);
         builder.addInterceptor(httpLoggingInterceptor);
@@ -47,5 +51,17 @@ public class PixivClient {
                 YThread.runOnUiThread(() -> callback.success(bodyString));
             }
         });
+    }
+
+    public static void setAuthorization() {
+        OkHttpClient.Builder builder = new OkHttpClient.Builder();
+        builder.connectTimeout(60, TimeUnit.SECONDS);
+        builder.readTimeout(600, TimeUnit.SECONDS);
+        builder.writeTimeout(600, TimeUnit.SECONDS);
+        HttpLoggingInterceptor httpLoggingInterceptor = new HttpLoggingInterceptor();
+        httpLoggingInterceptor.setLevel(BuildConfig.DEBUG ? HttpLoggingInterceptor.Level.BODY : HttpLoggingInterceptor.Level.NONE);
+        builder.addInterceptor(httpLoggingInterceptor);
+        builder.addInterceptor(new PixivInterceptor());
+        mClient = builder.build();
     }
 }
