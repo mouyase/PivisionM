@@ -1,11 +1,12 @@
-package tech.yojigen.pixiu.view;
+package tech.yojigen.pivisionR.view;
 
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import tech.yojigen.pixiu.R;
+import tech.yojigen.pivisionR.R;
+
 
 public class MainActivity extends AppCompatActivity {
     @Override

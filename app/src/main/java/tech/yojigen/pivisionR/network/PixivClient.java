@@ -1,4 +1,4 @@
-package tech.yojigen.pixiu.network;
+package tech.yojigen.pivisionR.network;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
@@ -9,7 +9,7 @@ import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
 import okhttp3.logging.HttpLoggingInterceptor;
-import tech.yojigen.pixiu.BuildConfig;
+import tech.yojigen.pivisionR.BuildConfig;
 import tech.yojigen.utils.YThread;
 
 public class PixivClient {

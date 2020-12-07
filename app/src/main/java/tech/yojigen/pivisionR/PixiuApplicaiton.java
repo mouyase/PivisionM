@@ -1,4 +1,4 @@
-package tech.yojigen.pixiu;
+package tech.yojigen.pivisionR;
 
 import android.app.Application;
 

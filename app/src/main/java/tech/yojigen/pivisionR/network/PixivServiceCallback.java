@@ -1,4 +1,4 @@
-package tech.yojigen.pixiu.network;
+package tech.yojigen.pivisionR.network;
 
 public interface PixivServiceCallback {
     abstract <T> void success(T jsonObject);

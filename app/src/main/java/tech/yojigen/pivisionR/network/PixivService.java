@@ -1,8 +1,8 @@
-package tech.yojigen.pixiu.network;
+package tech.yojigen.pivisionR.network;
 
 import com.google.gson.Gson;
 
-import tech.yojigen.pixiu.network.dto.OAuthDTO;
+import tech.yojigen.pivisionR.network.dto.OAuthDTO;
 
 public class PixivService {
     private final String HOST_API = "https://app-api.128512,xyz";

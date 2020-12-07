@@ -1,6 +1,4 @@
-package tech.yojigen.pixiu.network;
-
-import okhttp3.Response;
+package tech.yojigen.pivisionR.network;
 
 public interface PixivClientCallback {
     abstract void success(String bodyString);

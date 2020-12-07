@@ -1,4 +1,4 @@
-package tech.yojigen.pixiu.network.dto;
+package tech.yojigen.pivisionR.network.dto;
 
 public class OAuthDTO {
     private String access_token;

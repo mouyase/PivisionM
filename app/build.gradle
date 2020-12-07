@@ -7,7 +7,7 @@ android {
     buildToolsVersion "30.0.2"
 
     defaultConfig {
-        applicationId "tech.yojigen.pixiu"
+        applicationId "tech.yojigen.pivisionR"
         minSdkVersion 20
         targetSdkVersion 30
         versionCode 1
